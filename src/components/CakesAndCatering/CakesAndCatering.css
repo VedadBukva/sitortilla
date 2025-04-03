@@ -1,0 +1,21 @@
+.cakes-catering-line {
+    width: 1200px;
+    max-width: 1200px; 
+    height: 3px;
+    background-color: #EB9424; 
+    margin-bottom: 50px;
+}
+
+.cakes-catering-image {
+    width: 700px;
+    transition: transform 0.3s ease;
+}
+
+.cakes-catering-image:hover {
+    transform: scale(1.1);
+}
+
+.cakes-catering-container {
+    display: flex;
+    margin-bottom: 50px;
+}

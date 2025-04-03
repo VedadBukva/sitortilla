@@ -1,0 +1,35 @@
+.feed-wrapper {
+  display: flex;
+  justify-content: center;  
+  align-items: center;     
+  flex-wrap: wrap;   
+  font-size: 20pt;     
+  font-weight: bold;
+}
+
+.feed-container {
+  display: flex;
+  justify-content: center;  
+  align-items: center;     
+  gap: 20px;             
+  flex-wrap: wrap;        
+  padding: 20px;        
+}
+  
+.feed-box {
+  border: 3px solid #EB9424;
+  border-radius: 10pt;
+}
+
+.feed-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-block: 50px;
+}
+
+.feed-contact-button {
+  background-color: rgba(50, 43, 1, 0.744);
+  border-radius: 20pt;
+  border: solid 1px #EB9424;
+}

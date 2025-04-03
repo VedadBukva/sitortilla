@@ -1,0 +1,12 @@
+.numberinfo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.numberinfo-text {
+    font-size: 20pt;
+    font-weight: bold;
+
+}

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.cover-wrapper {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+ }
+
+.cover {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(1, auto);
+  gap: 10px;
+  max-height: 100px;
+  max-width: 1200px;
+  align-items: center;
+  margin-bottom: 90px;
+}
+
+.cover-item {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+  
+.cover-item-1 {
+  width: 120%;
+}
+  
+.cover-item:hover {
+transform: scale(2.0);
+}
+
+.cover-description {
+  display: flex;
+  width: 70%;
+  height: 350px;
+  border-radius: 20pt;
+  background-color: #EB9424;
+  align-content: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.cover-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cover-text-bold {
+  font-family: "Lobster";
+  font-size: 70pt;
+  text-align: center;
+  margin-block: 20px;
+}
+
+.cover-text-description {
+  font-size: 18pt;
+  text-align: center;
+  padding-inline: 20px;
+}
+
+.cover-image-container {
+  position: relative;
+  width: 250px;
+  height: auto;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-inline: 20px;
+}
+
+.cover-tortilla,
+.cover-tortilla-hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150%;
+  height: auto;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.cover-tortilla-hover {
+  width: 100%;
+  height: auto;
+  opacity: 0; /* Početno stanje slika sa hover efektnom */
+}
+
+.cover-tortilla {
+  opacity: 1; /* Početna slika je vidljiva */
+}
+
+.fade-out {
+  opacity: 0; /* Slika postaje providna na hover */
+}
+
+.fade-in {
+  opacity: 1; /* Slika postaje vidljiva na hover */
+}
+
+/* 📱 Mali telefoni (do 480px) */
+@media (max-width: 480px) {
+  .cover-header {
+    min-height: 100px;
+  }
+}
+
+/* 📱 Telefoni (481px - 768px) */
+@media (max-width: 768px) {
+  .cover-header {
+    min-height: 100px;
+  }
+}
+
+/* 💻 Tableti (769px - 1024px) */
+@media (max-width: 1024px) {
+  .cover-header {
+    min-height: 100px;
+  }
+}
+
+/* 🖥️ Laptopi i mali desktopi (1025px - 1280px) */
+@media (max-width: 1280px) {
+  .cover-header {
+    min-height: 130px;
+  }
+}
+
+/* 🖥️ Veliki ekrani (1281px i više) */
+@media (min-width: 1281px) {
+  .cover-header {
+    min-height: 150px;
+  }
+}

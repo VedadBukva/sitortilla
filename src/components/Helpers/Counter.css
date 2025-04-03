@@ -1,0 +1,22 @@
+.counter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .line {
+    width: 500px;
+    max-width: 500px; 
+    height: 3px;
+    background-color: #EB9424; 
+    margin: 0 15px; 
+  }
+  
+  .counter {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-block: 0px;
+  }
+  
