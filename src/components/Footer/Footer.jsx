@@ -26,11 +26,11 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>Osmo d.o.o. © {new Date().getFullYear()} Sva prava pridržana. Dizajn superiorITy.</p>
         <div className="footer-certificates">
           <img className="halal-logo" src={halalLogo} alt="Halal Icon" />
           <img className="ifs-logo" src={ifsLogo} alt="IFS Icon" />
         </div>
+        <p>Osmo d.o.o. © {new Date().getFullYear()} Sva prava pridržana. Dizajn superiorITy.</p>
         <div className="footer-social-networks">
           <a href="https://www.facebook.com/pekarasito"><img className="footer-fb" src={facebookLogo} alt="Facebook Icon" /></a>
           <a href="https://www.instagram.com/pekarasito"><img className="footer-ig" src={instagramLogo} alt="Instagram Icon" /></a>

@@ -10,7 +10,7 @@ html, body {
   height: 100%;
   font-family: "Lexend", sans-serif;
   cursor: default;
-  background: linear-gradient(135deg, #707070, #505050, #303030);
+  background-color: #505050;
 }
 
 .app {
