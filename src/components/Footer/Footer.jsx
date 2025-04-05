@@ -20,6 +20,12 @@ const Footer = () => {
           <p>sitortilla@outlook.com</p>
         </div>
         <div className="footer-section">
+          <h3>Podružnica Sito 9</h3>
+          <p>ul. 1. Slavne višegradske brigade bb</p>
+          <p>73000 Goražde, BiH</p>
+          <p>+387 38 517-700</p>
+        </div>
+        <div className="footer-section">
           <h3>Identifikacijski podaci</h3>
           <p><strong>ID Broj:</strong> 4200167790007</p>
           <p><strong>PDV Broj:</strong> 200167790007</p>

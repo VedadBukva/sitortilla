@@ -7,6 +7,7 @@ import Feed from "./components/Feed/Feed";
 import NumberInfo from "./components/NumberInfo/NumberInfo";
 import Gallery from "./components/Gallery/Gallery";
 import CakesAndCatering from "./components/CakesAndCatering/CakesAndCatering";
+import Contact from "./components/Contact/Contact";
 import "./App.css";
 
 function Home() {
@@ -28,6 +29,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/proizvodi" element={<Products />} />
+        <Route path="/kontakt" element={<Contact />} />
       </Routes>
       <Footer />
     </div>

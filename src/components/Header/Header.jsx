@@ -14,7 +14,7 @@ const Header = () => {
             <li><Link to="/">Usluge</Link></li>
             <li><Link to="/"><img src={logo} alt="Sitortilla Logo" className="logo" /></Link></li>
             <li><Link to="/proizvodi">Sitortilla</Link></li>
-            <li><Link to="/">Kontakt</Link></li>
+            <li><Link to="/kontakt">Kontakt</Link></li>
           </ul>
         </nav>
       </div>
