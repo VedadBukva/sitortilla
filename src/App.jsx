@@ -9,6 +9,7 @@ import NumberInfo from "./components/NumberInfo/NumberInfo";
 import Gallery from "./components/Gallery/Gallery";
 import CakesAndCatering from "./components/CakesAndCatering/CakesAndCatering";
 import Contact from "./components/Contact/Contact";
+import About from "./components/About/About";
 import "./App.css";
 
 function Home() {
@@ -42,12 +43,13 @@ function App() {
 
   return (
     <div className="app" style={{ 
-       background: background,
+        background: background,
         transition: "background 0.5s ease"
       }}>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/o-nama" element={<About />} />
         <Route path="/proizvodi" element={<Products />} />
         <Route path="/kontakt" element={<Contact />} />
       </Routes>

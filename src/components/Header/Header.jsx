@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import logo from "../../assets/logo.jpg";
 import "./Header.css";
 
@@ -10,7 +9,7 @@ const Header = () => {
       <div className="container">
         <nav>
           <ul>
-            <li><Link to="/">O nama</Link></li>
+            <li><Link to="/o-nama">O nama</Link></li>
             <li><Link to="/">Usluge</Link></li>
             <li><Link to="/"><img src={logo} alt="Sitortilla Logo" className="logo" /></Link></li>
             <li><Link to="/proizvodi">Sitortilla</Link></li>
