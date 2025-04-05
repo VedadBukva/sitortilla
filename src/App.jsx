@@ -10,6 +10,7 @@ import Gallery from "./components/Gallery/Gallery";
 import CakesAndCatering from "./components/CakesAndCatering/CakesAndCatering";
 import Contact from "./components/Contact/Contact";
 import About from "./components/About/About";
+import Services from "./components/Services/Services";
 import "./App.css";
 
 function Home() {
@@ -50,6 +51,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/o-nama" element={<About />} />
+        <Route path="/usluge" element={<Services />} />
         <Route path="/proizvodi" element={<Products />} />
         <Route path="/kontakt" element={<Contact />} />
       </Routes>

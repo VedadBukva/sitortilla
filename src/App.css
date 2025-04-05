@@ -19,16 +19,28 @@ html, body {
   flex-direction: column;
   min-width: 100vh;
   min-height: 100vh;
-  transition: background 0.3s ease;
 }
 
 .app-body {
   max-width: 1200px;
   margin: 0 auto;
+  animation: slideInFromTop 0.8s ease forwards; /* Animacija dolaska sa gornje strane */
+
 }
 
 .content {
   flex-grow: 1;
   padding: 80px 20px 20px; 
   text-align: center;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-60vh); /* Početno pozicioniranje izvan ekrana */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); /* Završno pozicioniranje na svoj krajnji položaj */
+    opacity: 1;
+  }
 }

@@ -10,7 +10,7 @@ const Header = () => {
         <nav>
           <ul>
             <li><Link to="/o-nama">O nama</Link></li>
-            <li><Link to="/">Usluge</Link></li>
+            <li><Link to="/usluge">Usluge</Link></li>
             <li><Link to="/"><img src={logo} alt="Sitortilla Logo" className="logo" /></Link></li>
             <li><Link to="/proizvodi">Sitortilla</Link></li>
             <li><Link to="/kontakt">Kontakt</Link></li>

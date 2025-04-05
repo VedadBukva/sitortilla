@@ -1,0 +1,49 @@
+.services-wrapper {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 120px;
+    padding-inline: 100px;
+}
+
+.services-line {
+    width: 1200px;
+    max-width: 1200px; 
+    height: 3px;
+    background-color: #EB9424; 
+    margin-bottom: 50px;
+}
+
+.services-catering,
+.services-sitortilla,
+.services-bakeries,
+.services-cakes {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-block: 40px;
+}
+
+.services-catering,
+.services-cakes {
+    text-align: right;
+}
+
+.services-text {
+    width: 60%;
+    height: auto;
+    font-size: 14pt;
+}
+
+.services-image {
+    width: 30%;
+    height: auto;
+}
+
+.services-bakeries-images {
+    width: 100%;
+}
+
