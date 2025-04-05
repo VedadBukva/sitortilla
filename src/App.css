@@ -13,19 +13,19 @@ html, body {
 }
 
 .app {
-  display: block;
+  display: flex;
   overflow-x: auto;
-  /* min-height: 100%; */
   flex-direction: column;
   min-width: 100vh;
   min-height: 100vh;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .app-body {
   max-width: 1200px;
   margin: 0 auto;
   animation: slideInFromTop 0.8s ease forwards; /* Animacija dolaska sa gornje strane */
-
 }
 
 .content {

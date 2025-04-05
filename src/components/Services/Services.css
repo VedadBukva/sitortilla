@@ -6,6 +6,7 @@
     align-items: center;
     margin-block: 120px;
     padding-inline: 100px;
+    animation: slideInFromTop 0.8s ease forwards; /* Animacija dolaska sa gornje strane */
 }
 
 .services-line {
@@ -47,3 +48,13 @@
     width: 100%;
 }
 
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-60vh); /* Početno pozicioniranje izvan ekrana */
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0); /* Završno pozicioniranje na svoj krajnji položaj */
+      opacity: 1;
+    }
+  }
