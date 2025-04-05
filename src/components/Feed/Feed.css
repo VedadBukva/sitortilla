@@ -3,6 +3,10 @@
   justify-content: center;  
   align-items: center;     
   flex-wrap: wrap;   
+}
+
+.feed-wrapper p {
+  margin: 0;
   font-size: 20pt;     
   font-weight: bold;
 }
@@ -19,6 +23,9 @@
 .feed-box {
   border: 3px solid #EB9424;
   border-radius: 10pt;
+  -webkit-box-shadow: 0px 0px 38px -11px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 38px -11px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 38px -11px rgba(0,0,0,0.75);
 }
 
 .feed-contact {
@@ -32,4 +39,6 @@
   background-color: rgba(50, 43, 1, 0.744);
   border-radius: 20pt;
   border: solid 1px #EB9424;
+  font-size: 20pt;     
+  font-weight: bold;
 }

@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { useEffect , useState } from "react";
 import Header from "./components/Header/Header";
 import Cover from "./components/Cover/Cover";
 import Footer from "./components/Footer/Footer";
@@ -23,8 +24,27 @@ function Home() {
 }
 
 function App() {
+  const [background, setBackground] = useState("");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const gradient = `linear-gradient(to bottom, rgb(92, 51, 23), rgb(139, 69, 19), rgb(101, 67, 33))`;
+
+      setBackground(gradient);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // trigger on load
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  
+
   return (
-    <div className="app">
+    <div className="app" style={{ 
+       background: background,
+        transition: "background 0.5s ease"
+      }}>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

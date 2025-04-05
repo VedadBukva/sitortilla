@@ -1,3 +1,15 @@
+.cakes-catering-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cakes-catering-wrapper-title {
+    margin-top: 0;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
 .cakes-catering-line {
     width: 1200px;
     max-width: 1200px; 
@@ -6,16 +18,114 @@
     margin-bottom: 50px;
 }
 
-.cakes-catering-image {
-    width: 700px;
-    transition: transform 0.3s ease;
-}
-
-.cakes-catering-image:hover {
-    transform: scale(1.1);
-}
-
 .cakes-catering-container {
-    display: flex;
+    display: grid;   
+    grid-template-columns: repeat(4, 1fr); /* 5 kolona */
+    grid-template-rows: repeat(4, 1fr); /* 5 redova */
+    gap: 10px; /* Razmak između grid elemenata */
+    height: 600px; /* Možeš prilagoditi visinu grida */
+    width: 80%; /* Možeš prilagoditi širinu grida */
     margin-bottom: 50px;
 }
+
+.cakes-catering-catering {
+    grid-row: 1 / 6; /* Zauzima visinu od 0 do 4 (1 do 6 u grid sistemu) */
+    grid-column: 1 / 3; /* Zauzima širinu od 0 do 2 */
+    background-image: url("../../assets/catering.jpg");
+}
+  
+.cakes-catering-sitortilla {
+    grid-row: 1 / 3; /* Zauzima visinu od 0 do 2 */
+    grid-column: 3 / 5; /* Zauzima širinu od 2 do 4 */
+    background-image: url("../../assets/sitortilla.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.cakes-catering-bakeries {
+    grid-row: 3 / 6; /* Zauzima visinu od 2 do 4 */
+    grid-column: 3 / 4; /* Zauzima širinu od 2 do 3 */
+    background-image: url("../../assets/bakery.jpg");
+    background-size: cover;
+}
+
+.cakes-catering-cakes {
+    grid-row: 3 / 6; /* Zauzima visinu od 2 do 4 */
+    grid-column: 4 / 5; /* Zauzima širinu od 3 do 4 */
+    background-image: url("../../assets/weddingcake.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.cakes-catering-box {
+    position: relative; /* Omogućava overlay da se pozicionira unutar ovog container-a */
+    border-radius: 10pt;
+    -webkit-box-shadow: 0px 0px 38px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 38px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 38px -11px rgba(0,0,0,0.75);
+    transition: opacity 0.3s ease; /* Efekat prelaza za promenu opaciteta */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(59, 56, 56, 0.768); /* Tamna pozadina sa transparentnošću */
+    opacity: 0; /* Overlay je inicijalno skriven */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: opacity 0.5s ease; /* Efekat za prikazivanje overlay-a */
+    border-radius: 10pt;
+  }
+
+.overlay-second-column {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(59, 56, 56, 0.768); /* Tamna pozadina sa transparentnošću */
+    opacity: 0; /* Overlay je inicijalno skriven */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    transition: opacity 0.5s ease; /* Efekat za prikazivanje overlay-a */
+    border-radius: 10pt;
+}
+  
+  .text {
+    color: #EB9424; /* Tekst je bele boje */
+    font-size: 32pt; /* Veličina teksta */
+    font-weight: bold;
+    opacity: 0; /* Tekst je inicijalno skriven */
+    transition: opacity 0.5s ease; /* Efekat za prikazivanje teksta */
+    padding-left: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); 
+  }
+
+  .text-second-column {
+    color: #EB9424; /* Tekst je bele boje */
+    font-size: 26pt; /* Veličina teksta */
+    font-weight: bold;
+    opacity: 0; /* Tekst je inicijalno skriven */
+    transition: opacity 0.5s ease; /* Efekat za prikazivanje teksta */
+    padding-left: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  /* Efekat kada pređeš mišem na container */
+.cakes-catering-box:hover {
+    opacity: 0.9; /* Slika postaje zatamnjena */
+  }
+  
+  .cakes-catering-box:hover .overlay,
+  .cakes-catering-box:hover .overlay-second-column {
+    opacity: 1; /* Overlay se pojavljuje */
+  }
+  
+  .cakes-catering-box:hover .text,
+  .cakes-catering-box:hover .text-second-column {
+    opacity: 1; /* Tekst postaje vidljiv */
+  }
