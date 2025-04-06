@@ -21,3 +21,22 @@
     margin-block: 0px;
   }
   
+  @media (max-width: 480px) {
+    .line {
+      width: 100px;
+      max-width: 100px; 
+      height: 3px;
+      background-color: #EB9424; 
+      margin: 0 15px; 
+    }
+  }
+
+  @media (max-width: 768px) {
+    .counter {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffffff;
+      text-align: center;
+      margin-block: 0px;
+    }
+  }

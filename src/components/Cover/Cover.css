@@ -109,17 +109,113 @@ transform: scale(2.0);
   opacity: 1; /* Slika postaje vidljiva na hover */
 }
 
-/* 📱 Mali telefoni (do 480px) */
 @media (max-width: 480px) {
-  .cover-header {
-    min-height: 100px;
+  .cover-wrapper {
+    max-width: 480px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+   }
+
+   .cover {
+    display: flex;
+    flex-direction: row;
+    max-width: max-content;
+    align-items: center;
+    margin-bottom: 40px;
+    min-height: max-content;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .cover-item {
+    width: 45%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+   .cover-text-bold {
+    font-family: "Lobster";
+    font-size: 30pt;
+    text-align: center;
+    margin-block: 10px;
+  }
+
+  .cover-text-description {
+    font-size: 12pt;
+    text-align: center;
+    padding-inline: 20px;
   }
 }
+
 
 /* 📱 Telefoni (481px - 768px) */
 @media (max-width: 768px) {
   .cover-header {
     min-height: 100px;
+  }
+
+  .cover-wrapper {
+    max-width: 768px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+   }
+
+  .cover {
+    display: flex;
+    flex-direction: row;
+    max-width: max-content;
+    align-items: center;
+    margin-bottom: 40px;
+    min-height: max-content;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .cover-item {
+    width: 45%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+
+  .cover-description {
+    display: flex;
+    width: 90%;
+    height: 350px;
+    border-radius: 20pt;
+    background-color: #EB9424;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    -webkit-box-shadow: 0px 0px 38px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 38px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 38px -11px rgba(0,0,0,0.75);
+  }
+
+  .cover-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .cover-text-bold {
+    font-family: "Lobster";
+    font-size: 30pt;
+    text-align: center;
+    margin-block: 10px;
+  }
+
+  .cover-text-description {
+    font-size: 12pt;
+    text-align: center;
+    padding-inline: 20px;
   }
 }
 

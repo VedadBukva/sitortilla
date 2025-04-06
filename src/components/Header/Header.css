@@ -53,3 +53,51 @@ nav a {
 nav a:hover {
   color: rgba(50, 43, 1, 0.744);
 }
+
+@media (max-width: 468px) {
+  .header.sticky {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 100%; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header.sticky {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 100%; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+}

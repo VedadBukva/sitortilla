@@ -12,6 +12,7 @@ import Contact from "./components/Contact/Contact";
 import About from "./components/About/About";
 import Services from "./components/Services/Services";
 import "./App.css";
+import logo from "../src/assets/logo.jpg";
 
 function Home() {
   return (
@@ -27,6 +28,7 @@ function Home() {
 
 function App() {
   const [background, setBackground] = useState("");
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,13 +42,28 @@ function App() {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  
 
-  return (
-    <div className="app" style={{ 
+  useEffect(() => {
+    // Simuliraš učitavanje – npr. možeš čekati podatke, slike, animacije itd.
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000); // 2 sekunde loader
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return loading ? (
+    <div className="loader-wrapper">
+      <img className="loader-logo" src={logo} alt="Sito logo"></img>
+    </div>
+  ) : (
+    <div
+      className="app"
+      style={{
         background: background,
-        transition: "background 0.5s ease"
-      }}>
+        transition: "background 0.5s ease",
+      }}
+    >
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -58,6 +75,7 @@ function App() {
       <Footer />
     </div>
   );
+
 }
 
 export default App;

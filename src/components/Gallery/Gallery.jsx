@@ -12,12 +12,10 @@ const Gallery = () => {
     const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
 
     return (
-        <div className="gallery-wrapper">
-            <div className="cover">
+        <div className="cover">
             {images.map((image, index) => (
                 <img key={index} src={image} alt={`Gallery ${index + 1}`} className={`cover-item cover-item-${index + 1}`} />
             ))}
-            </div>
         </div>
     )
 };

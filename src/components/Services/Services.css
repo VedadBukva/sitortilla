@@ -9,7 +9,7 @@
 }
 
 .services-line {
-    width: 1200px;
+    width: 90%;
     max-width: 1200px; 
     height: 3px;
     background-color: #EB9424; 
@@ -19,6 +19,7 @@
 .services-bakeries,
 .services-cakes {
     margin-block: 50px;
+    width: 90%;
 }
 
 .services-sitortilla {
