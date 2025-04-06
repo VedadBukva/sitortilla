@@ -5,11 +5,38 @@ import cakesVideo from "../../assets/cakes.mp4";
 import bakery1 from "../../assets/pekara1.jpg";
 import bakery2 from "../../assets/pekara2.jpg";
 import bakery3 from "../../assets/pekara3.jpg";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const Services = () => {
+    const location = useLocation();
+
+    useEffect(() => {
+      if (location.hash) {
+        const element = document.getElementById(location.hash.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+      else {
+        document.querySelector(".services-wrapper").animate(
+            [
+              { transform: "translateY(-60vh)", opacity: 0 },
+              { transform: "translateY(0)", opacity: 1 }
+            ],
+            {
+              duration: 800,
+              easing: "ease-out",
+              fill: "forwards"
+            }
+          );
+      }
+    }, [location]);
+
     return (
       <div className="services-wrapper">
-        <div id="services-sitortilla" className="services-sitortilla">
+        <div id="sitortilla"></div>
+        <div className="services-sitortilla">
             <div className="services-image">
                 <iframe width="400" height="300" src="https://www.youtube.com/embed/wFmVT14j1Q4?si=hv-Gb4FjoPFH4TEi?autoplay=1" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media;" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
@@ -19,8 +46,8 @@ const Services = () => {
                 <p>Idealna za brzi užitak tokom dana, ali i kao jedinstven specijalitet za sve one koji žele nešto novo i ukusno. Posjetite nas u pekari Sito i uvjerite se zašto je Sitortilla pravi izbor za vaše nepce!</p>
             </div>
         </div>
-        <div className="services-line"></div>
-        <div id="catering" className="services-catering">
+        <div id="catering" className="services-line"></div>
+        <div className="services-catering">
             <div className="services-text">
                 <h1>Catering</h1>
                 <p>Pekara "Sito" ponosno nudi vrhunsku catering uslugu, pružajući vam najkvalitetnije i najukusnije proizvode koji će unaprediti svaki događaj. Bilo da je u pitanju korporativni događaj, svadbeni prijem, rođendanska proslava ili jednostavno prijatno okupljanje s prijateljima, naša ponuda cateringa nudi raznovrsne specijalitete koji će zadovoljiti svačiji ukus.</p>
@@ -33,8 +60,8 @@ const Services = () => {
                 </video>
             </div>
         </div>
-        <div className="services-line"></div>
-        <div id="services-bakeries" className="services-bakeries">
+        <div id="pekare" className="services-line"></div>
+        <div className="services-bakeries">
             <div className="services-image">
                 <img className="services-bakeries-images" src={bakery1} alt="Pekara"/>
                 <img className="services-bakeries-images" src={bakery2} alt="Pekara"/>
@@ -47,8 +74,8 @@ const Services = () => {
                 <p>Osim svakodnevne ponude, Pekara "Sito" se ponosi i specijaliziranim proizvodima, kao što su gurmanski sendviči, specijalni kolači za različite prigode, te catering uslugama koje pružamo za sve vrste događanja. Naša misija je da uvijek budemo korak ispred u zadovoljavanju vaših potreba, bilo da je riječ o svježem doručku, svečanom ručku ili posebnoj proslavi.</p>
             </div>
         </div>
-        <div className="services-line"></div>
-        <div id="services-cakes" className="services-cakes">
+        <div id="poslastice" className="services-line"></div>
+        <div className="services-cakes">
             <div className="services-text">
                 <h1>Poslastice</h1>
                 <p>Sito poslastice su spoj savršenstva i strasti prema slastičarstvu, koji osvajaju na prvi zalogaj.</p>
