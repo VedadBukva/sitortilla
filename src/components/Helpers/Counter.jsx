@@ -3,8 +3,23 @@ import "./Counter.css";
 
 const Counter = ({ start = 0, end = 16000, duration = 3000 }) => {
   const [count, setCount] = useState(start);
+  const [shouldAnimate, setShouldAnimate] = useState(false);
 
   useEffect(() => {
+    const hasAnimated = sessionStorage.getItem("counterAnimated");
+
+    if (!hasAnimated) {
+      setShouldAnimate(true);
+      sessionStorage.setItem("counterAnimated", "true");
+    }
+    else {
+      setCount(end);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!shouldAnimate) return;
+
     let startTime;
     const step = (timestamp) => {
       if (!startTime) startTime = timestamp;
@@ -13,7 +28,7 @@ const Counter = ({ start = 0, end = 16000, duration = 3000 }) => {
       if (progress < 1) requestAnimationFrame(step);
     };
     requestAnimationFrame(step);
-  }, [start, end, duration]);
+  }, [shouldAnimate, start, end, duration]);
 
   return (
     <div className="counter-container">
