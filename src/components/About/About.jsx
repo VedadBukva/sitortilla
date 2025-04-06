@@ -73,7 +73,7 @@ function About() {
             </VerticalTimelineElement>
             </VerticalTimeline>
             <div className="about-text">
-                <p>Osmo d.o.o. posjeduje certifikate: Halal standard BAS 1049:2023 i IFS Food v8.</p>
+                <p>Osmo d.o.o. posjeduje certifikate: <b>Halal standard BAS 1049:2023</b> i <b>IFS Food v8.</b></p>
                 <div className="about-certificates">
                     <img className="about-halal-logo" src={halalLogo} alt="Halal Icon" />
                     <img className="about-ifs-logo" src={ifsLogo} alt="IFS Icon" />

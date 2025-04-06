@@ -14,8 +14,10 @@ const Products = () => {
         <div className="products-image">
           <iframe width="700" height="400" src="https://www.youtube.com/embed/wFmVT14j1Q4?si=hv-Gb4FjoPFH4TEi?autoplay=1" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media;" referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div>
-        <h3>Pogledajte naš katalog "Sitortilla" proizvoda:</h3>
-        <FlipBook />
+        <div className="products-catalog">
+          <h3>Pogledajte naš katalog "Sitortilla" proizvoda:</h3>
+          <FlipBook />
+        </div>
       </div>
     );
   };

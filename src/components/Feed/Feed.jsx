@@ -1,7 +1,14 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 import "./Feed.css";
 
 const Feed = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/kontakt');
+  };
+
   return (
     <div className="feed-wrapper">
       <p>Prati nas</p>
@@ -12,7 +19,7 @@ const Feed = () => {
       </div>
       <div className="feed-contact">
         <p>Želiš catering? Imaš pitanje?</p>
-        <button className="feed-contact-button">Kontaktiraj nas</button>
+        <button className="feed-contact-button" onClick={handleClick}>Kontaktiraj nas</button>
       </div>
     </div>
   );
