@@ -11,12 +11,13 @@
 }
 
 @media (max-width: 480px) {
-    .line {
-        width: 100px;
-        max-width: 100px; 
-        height: 3px;
-        background-color: #EB9424; 
-        margin: 0 15px; 
+    .numberinfo-text {
+        font-size: 12pt;
+        font-weight: bold;
+    }
+
+    .numberinfo-wrapper {
+        margin-bottom: 0px;
     }
 }
 
@@ -24,5 +25,9 @@
     .numberinfo-text {
         font-size: 12pt;
         font-weight: bold;
+    }
+
+    .numberinfo-wrapper {
+        margin-bottom: 0px;
     }
 }

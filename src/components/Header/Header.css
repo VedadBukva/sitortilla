@@ -16,28 +16,33 @@
   z-index: 1000;
   padding-top: 5px;
   padding-bottom: 5px;
+  height: 80px;
 }
 
 .container {
-  width: 100%;
-  max-width: 1200px; 
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 0 20px;
+  width: 100%;
 }
 
 .logo {
-  height: 80px; 
-  width: auto; 
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 80px;
+  z-index: 1001;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 80px;
   padding: 0;
   margin: 0;
 }
@@ -54,28 +59,8 @@ nav a:hover {
   color: rgba(50, 43, 1, 0.744);
 }
 
-@media (max-width: 468px) {
-  .header.sticky {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  
-  .container {
-    width: 100%;
-    max-width: 100%; 
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-  }
+.mobile-menu-icon {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -89,6 +74,7 @@ nav a:hover {
     z-index: 1000;
     padding-top: 5px;
     padding-bottom: 5px;
+    height: 60px;
   }
   
   .container {
@@ -99,5 +85,55 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     padding: 0 20px;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #EB9424;
+    width: 100%;
+    height: calc(100vh - 60px);
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    gap: 40px;
+  }
+
+  nav ul.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+    z-index: 1000;
+    padding-top: 30px;
+  }
+
+  nav li {
+    margin: 0px 0;
+  }
+
+  nav li.hide {
+    display: none;
+  }
+
+  .logo {
+    position: absolute;
+    left: 20px;
+    transform: translateY(-50%);
+    height: 60px;
+    z-index: 1001;
+  }
+
+  .container {
+    justify-content: center;
   }
 }

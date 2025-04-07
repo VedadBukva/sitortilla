@@ -22,12 +22,21 @@
   }
   
   @media (max-width: 480px) {
+    .counter {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffffff;
+      text-align: center;
+      margin-block: 0px;
+    }
+    
     .line {
-      width: 100px;
-      max-width: 100px; 
-      height: 3px;
-      background-color: #EB9424; 
-      margin: 0 15px; 
+      margin: 0;
+    }
+
+    .counter-container {
+      width: 90%;
+      max-width: 90%;
     }
   }
 
@@ -38,5 +47,14 @@
       color: #ffffff;
       text-align: center;
       margin-block: 0px;
+    }
+
+    .line {
+      margin: 0;
+    }
+
+    .counter-container {
+      width: 90%;
+      max-width: 90%;
     }
   }
