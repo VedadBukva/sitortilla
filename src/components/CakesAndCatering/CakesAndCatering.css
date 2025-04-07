@@ -175,4 +175,9 @@
       background-color: #EB9424; 
       margin-bottom: 50px;
     }
+
+    .overlay,
+    .overlay-second-column {
+      display: none;
+    }
   }

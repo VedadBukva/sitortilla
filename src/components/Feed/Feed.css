@@ -42,6 +42,7 @@
   border: solid 1px #EB9424;
   font-size: 20pt;     
   font-weight: bold;
+  color: white;
 }
 
 @media (max-width: 480px) {

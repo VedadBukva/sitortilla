@@ -54,7 +54,7 @@ const Services = () => {
                 <p>Naša ponuda uključuje bogatstvo svežih peciva, slanih i slatkih zalogaja, kao i specijalitete po narudžbi, kao što su ukrašeni kolači, torta po vašem izboru, finger food i razni specijaliteti koji će oduševiti vaše goste. Svaka narudžbina je pažljivo pripremljena i isporučena na vreme, uz najviši standard kvaliteta.</p>
             </div>
             <div className="services-image">
-                <video width="100%" height="auto" controls autoPlay muted>
+                <video width="100%" height="auto" controls>
                     <source src={cateringVideo} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
@@ -83,7 +83,7 @@ const Services = () => {
                 <p>Za one koji žele posebnu poslastičarsku uslugu, nudimo i prilagođene torte i deserte prema vašim željama, kako bi vaša proslava bila još posebna i jedinstvena. Naša strast za slatkišima i predanost kvaliteti učinit će svaki trenutak nezaboravnim.</p>
             </div>
             <div className="services-image">
-                <video width="100%" height="auto" controls autoPlay muted>
+                <video width="100%" height="auto" controls>
                     <source src={cakesVideo} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
