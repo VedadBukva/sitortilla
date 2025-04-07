@@ -16,7 +16,7 @@ const Header = () => {
         <Link to="/"><img src={logo} alt="Sitortilla Logo" className="logo" /></Link>
 
         <nav>
-          <div className="mobile-menu-icon" onClick={toggleMenu}>
+          <div className={`mobile-menu-icon ${menuOpen ? "rotated" : ""}`} onClick={toggleMenu}>
             &#9776; {/* Hamburger icon */}
           </div>
           <ul className={menuOpen ? "open" : ""}>

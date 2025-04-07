@@ -92,6 +92,13 @@ nav a:hover {
     position: absolute;
     right: 20px;
     top: 15px;
+    font-size: 15pt;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .mobile-menu-icon.rotated {
+    transform: rotate(90deg);
   }
 
   nav ul {

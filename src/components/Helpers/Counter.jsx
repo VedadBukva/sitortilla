@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Counter.css";
 
-const Counter = ({ start = 0, end = 16000, duration = 3000 }) => {
+const Counter = ({ start = 0, end = 100000, duration = 3000 }) => {
   const [count, setCount] = useState(start);
   const [shouldAnimate, setShouldAnimate] = useState(false);
 
@@ -33,7 +33,9 @@ const Counter = ({ start = 0, end = 16000, duration = 3000 }) => {
   return (
     <div className="counter-container">
       <div className="line"></div>
-      <h2 className="counter">{count.toLocaleString()}</h2>
+      <h2 className="counter">
+        {count.toLocaleString()}{count === end && '+'}
+      </h2>
       <div className="line"></div>
     </div>
   );
