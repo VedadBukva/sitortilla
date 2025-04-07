@@ -69,3 +69,127 @@
       opacity: 1;
     }
   }
+
+  @media (max-width: 480px) {
+    .contact-wrapper {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 120px;
+    }
+
+    .contact-maps {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-map,
+    .contact-manifacture {
+        display: flex;
+        padding: 10px;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-map-iframe {
+        width: 95%;
+        height: 250px;
+    }
+
+    .contact-map-bakeries,
+    .contact-map-manifacture {
+        width: 100%;
+    }
+
+    .contact-map p,
+    .contact-manifacture p {
+        font-size: 16pt;
+    }
+
+    .contact-info {
+        margin-top: 50px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column; 
+        width: 95%;
+    }
+
+    .contact-info p {
+        display: flex;
+        font-size: 14pt;
+        font-weight: bold;
+        margin: 5px;
+        padding-inline: 10px;
+    }
+
+    .contact-info img {
+        width: 30px;
+        height: max-content;
+        margin-right: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contact-wrapper {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 120px;
+    }
+
+    .contact-maps {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-map,
+    .contact-manifacture {
+        display: flex;
+        padding: 10px;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-map-iframe {
+        width: 95%;
+        height: 250px;
+    }
+
+    .contact-map-bakeries,
+    .contact-map-manifacture {
+        width: 100%;
+    }
+
+    .contact-map p,
+    .contact-manifacture p {
+        font-size: 16pt;
+    }
+
+    .contact-info {
+        margin-top: 50px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column; 
+        width: 95%;
+    }
+
+    .contact-info p {
+        display: flex;
+        font-size: 14pt;
+        font-weight: bold;
+        margin: 5px;
+        padding-inline: 10px;
+    }
+
+    .contact-info img {
+        width: 30px;
+        height: max-content;
+        margin-right: 20px;
+    }
+  }

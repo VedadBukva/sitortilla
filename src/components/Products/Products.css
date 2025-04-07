@@ -23,12 +23,49 @@
 }
 
 @keyframes slideInFromTop {
-    0% {
-      transform: translateY(-60vh); /* Početno pozicioniranje izvan ekrana */
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0); /* Završno pozicioniranje na svoj krajnji položaj */
-      opacity: 1;
-    }
+  0% {
+    transform: translateY(-60vh); /* Početno pozicioniranje izvan ekrana */
+    opacity: 0;
   }
+  100% {
+    transform: translateY(0); /* Završno pozicioniranje na svoj krajnji položaj */
+    opacity: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-wrapper {
+    margin-top: 100px;
+    min-height: fit-content;
+    text-align: center;
+    font-size: 14pt;
+    width: 100vw;
+  }
+
+  .products-image iframe {
+    width: 90%;
+  }
+
+  
+  .products-catalog {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .products-wrapper {
+    margin-top: 100px;
+    min-height: fit-content;
+    text-align: center;
+    font-size: 14pt;
+    width: 100vw;
+  }
+
+  .products-image iframe {
+    width: 90%;
+  }
+
+  .products-catalog {
+    margin-top: 50px;
+  }
+}

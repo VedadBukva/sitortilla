@@ -30,3 +30,15 @@
       opacity: 1;
     }
   }
+
+@media (max-width: 480px) {
+  .about-wrapper {
+    max-width: 100vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-wrapper {
+    max-width: 100vw;
+  }
+}
