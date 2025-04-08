@@ -18,6 +18,7 @@ const Footer = () => {
           <p>71000 Sarajevo, BiH</p>
           <p>+387 33 789-930</p>
           <p>sitortilla@outlook.com</p>
+          <p>osmo_sito@outlook.com</p>
         </div>
         <div className="footer-section">
           <h3>Podružnica Sito 9</h3>

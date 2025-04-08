@@ -28,6 +28,7 @@ function Contact() {
                 <p><img src={phoneIcon} alt="Phone icon" />+387 62 993-487</p>
                 <p><img src={phone1Icon} alt="Phone icon" />+387 33 789-930</p>
                 <p><img src={emailIcon} alt="Email icon" />sitortilla@outlook.com</p>
+                <p><img src={emailIcon} alt="Email icon" />osmo_sito@outlook.com</p>
                 <p><img src={locationIcon} alt="Location icon" />Adema Buće 303, 71000 Sarajevo</p>
             </div>
         </div>
