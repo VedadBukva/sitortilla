@@ -28,7 +28,7 @@ const Cover = () => {
           </div>  
           <div className="cover-text">
             <p className="cover-text-bold">Sitortilla</p>
-            <p className="cover-text-description">Dobar komšija donosi najbolji spoj tradicije i inovacije. <br></br> Isprobajte <b>Sitortillu</b> i uživajte u savršenom okusu!</p>
+            <p className="cover-text-description">Dobar komšija donosi najbolji spoj tradicije i inovacije. <br></br> Pronađite <b>Sitortillu</b> u pekari Sito i uživajte u savršenom okusu!</p>
           </div>
         </div>
       </div>

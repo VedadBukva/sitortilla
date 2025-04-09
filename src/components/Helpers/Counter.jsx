@@ -32,11 +32,11 @@ const Counter = ({ start = 0, end = 100000, duration = 3000 }) => {
 
   return (
     <div className="counter-container">
-      <div className="line"></div>
+      <div className="line-1"></div>
       <h2 className="counter">
         {count.toLocaleString()}{count === end && '+'}
       </h2>
-      <div className="line"></div>
+      <div className="line-2"></div>
     </div>
   );
 };
